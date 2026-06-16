@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TM Casino</title>
 </head>
 <body>
-    <h1>Casino Login</h1>
 
-    <input type="text" placeholder="Username">
-    <br><br>
+    <h1>Login Page</h1>
 
-    <input type="password" placeholder="Password">
-    <br><br>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br><br>
 
-    <button>Login</button>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <br>
+
+    <p>Don't have an account? <a href="register.html">Register Here</a></p>
+
 </body>
 </html>
