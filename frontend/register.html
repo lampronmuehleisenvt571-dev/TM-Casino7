@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TM Casino</title>
 </head>
 <body>
+
     <h1>Casino Register</h1>
 
-    <input type="text" placeholder="Username">
-    <br><br>
+    <form action="/register" method="POST">
 
-    <input type="email" placeholder="Email">
-    <br><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+        <br><br>
 
-    <input type="password" placeholder="Password">
-    <br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+        <br><br>
 
-    <button>Register</button>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <br>
+
+    <a href="login.html">Already have an account? Login</a>
+
 </body>
 </html>
